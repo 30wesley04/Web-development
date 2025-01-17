@@ -1,0 +1,28 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+}
+
+.cards-container{
+    max-width: 120rem;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    
+}
+
+.sizeImg{
+    height: 43rem;
+}
+

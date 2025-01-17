@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/functions2.js"></script>
+    <script defer src="js/validate.js"></script>
+    <script src="https://kit.fontawesome.com/6911c1abd9.js" crossorigin="anonymous"></script>
+    <title>Crear</title>
+</head>
+<body class="body user__background">
+    <form id="formulario-user-persona" class="w-100" enctype="multipart/form-data" >
+        <div class="contenedor grid">
+            <div class="fotografia">
+                <input id="input-imagen" type="file" name="imagen" accept="image/jpeg, image/png" style="display: none;">
+                <img src="img/user-preview.png" alt="imgpreview" class="imgPreview cursorImagen" id="imagen-usuario">
+                <div class="frase">
+                    <p><input type="text" name="frase" placeholder="Frase"></p>
+                </div>
+            </div>
+    
+            <div class="informacionPersonal">
+                <div class="seccion">
+                    <input type="text" name="nombre" placeholder="nombre" class="inputNombre">
+                    <div class="informacionPersonal__iconos">
+                        <div class="campo-informacion">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="number" placeholder="Edad" name="edad" min="15">
+                        </div>
+    
+                        <div class="campo-informacion">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input type="text" placeholder="Ciudad" name="ciudad">
+                        </div>
+
+                        <div class="campo-informacion">
+                        <input type="text" placeholder="Pais" name="pais" class="inputPais">
+                        </div>
+                        
+    
+                        <div class="campo-informacion">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <input type="text" placeholder="Profesion" name="profesion">
+                        </div>
+                        
+                        <div class="campo-informacion">
+                            <i class="fa-solid fa-house"></i>
+                            <input type="text" placeholder="Estado civil" name="estado_civil">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="seccion fondoGris">
+                    <h3 class="data-no-linea">Tech</h3>
+                    <div class="tecnologias desplegable">
+                        <div class="tecnologia">
+                            <select name="tecnologias_id[]" id="tecnologia1">
+                                <option value="" disabled selected>--Seleccione--</option>
+                                
+                            </select>
+                            <div class="rating">
+                                <input type="radio" id="tecnologia1-punto5" name="calificacion[0]" value="5">
+                                <label for="tecnologia1-punto5"></label>
+                                <input type="radio" id="tecnologia1-punto4" name="calificacion[0]" value="4">
+                                <label for="tecnologia1-punto4"></label>
+                                <input type="radio" id="tecnologia1-punto3" name="calificacion[0]" value="3">
+                                <label for="tecnologia1-punto3"></label>
+                                <input type="radio" id="tecnologia1-punto2" name="calificacion[0]" value="2">
+                                <label for="tecnologia1-punto2"></label>
+                                <input type="radio" id="tecnologia1-punto1" name="calificacion[0]" value="1">
+                                <label for="tecnologia1-punto1"></label>
+                              </div>
+                        </div>
+
+                        <button type="button" class="agregarCampo" id="tecnologiaButton">+</button>
+                    </div>
+                </div>
+    
+                <div class="seccion">
+                    <h3>Bio</h3>
+                    <textarea name="biografia" id="biografia"  rows="5" class="w-100"></textarea>
+                </div>
+    
+                <div class="seccion fondoGris">
+                    <h3 class="data-no-linea">Favorite Brands</h3>
+                    <div class="brands desplegable">
+                        
+                    </div>
+                </div>
+    
+                <div class="seccion">
+                    <h3>Wants and Needs</h3>
+                    <div class="desplegable" id="needs">
+                        <textarea name="needs[]" id="" class="w-100"></textarea>
+                        <button type="button" class="agregarCampo" id="needsButton">+</button>
+                    </div>
+                </div>
+    
+                <div class="seccion">
+                    <h3>Frustrations</h3>
+                    <div class="desplegable" id="frustrations">
+                        <textarea name="frustrations[]" class="w-100"></textarea>
+                        <button type="button" class="agregarCampo" id="frustrationsButton">+</button>
+                    </div>
+
+                    <input type="submit" value="Guardar" class="boton-formulario">
+                </div>
+            </div>
+            
+        </div>
+        
+    </form>
+</body>
+</html>

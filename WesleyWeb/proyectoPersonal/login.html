@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://kit.fontawesome.com/6911c1abd9.js" crossorigin="anonymous"></script>
+    <script defer src="js/functions.js"></script>
+    <title>Login</title>
+</head>
+<body class="body login__background">
+    <div class="loader">
+        <div class="loader-spinner"></div>
+      </div>
+      
+    <form action="" class="loginForm" id="formulario-login">
+        <h2>Log In</h2>
+        <div class="contenedor campos__contenedor">
+            <div class="campo campo__estilo-negro">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" id="email" name="usuario" placeholder=" "  value="german.soto@upaep.mx">
+                <label for="email">Email</label>
+            </div>
+            
+            <div class="campo campo__estilo-negro">
+                <i class="fa-solid fa-eye-slash iconoPassword" ></i>
+                <input type="password" id="password" name="password" placeholder=" " value="germanSoto">
+                <label for="password">Password</label>
+            </div>
+
+            <div class="campo campo__estilo-radio">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Recordarme</label>
+              </div>              
+
+            <div class="campo">
+                <input type="hidden" value="" name="jwt" id="jwt">
+                <button type="submit" class="botonLogin">Iniciar sesión</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
